@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    {% for post in posts %}
+
+        <h2>
+            <a href="{% url 'posts:post_detail' slug=post.slug %}">
+                {{ post.title }}
+            </a>
+        </h2>
+
+    {% endfor %}
+
+{% endblock %}

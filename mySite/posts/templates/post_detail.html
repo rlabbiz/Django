@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <img src="{{ post.img.url }}" alt="{{ post.img }}" width="1000" height='500' >
+    <h2>{{ post.title }}</h2>
+    <h2>{{ post.date }}</h2>
+    <h2>{{ post.body }}</h2>
+    <h2>{{ post.slug }}</h2>
+{% endblock content %}
